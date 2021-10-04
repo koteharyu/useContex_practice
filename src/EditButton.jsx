@@ -1,5 +1,8 @@
-export const EditButton = (props) => {
-  const { isAdmin } = props;
+import { useContext } from 'react'
+import { AdminFlagContext } from './components/providers/AdminFlagProvider'
+
+export const EditButton = () => {
+  const { isAdmin } = useContext(AdminFlagContext)
   return (
     <button style={style} disabled={!isAdmin}>Edit</button>
   )

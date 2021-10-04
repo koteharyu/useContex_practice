@@ -1,12 +1,11 @@
 import { EditButton } from './EditButton'
 
-export const Card = (props) => {
-  const { isAdmin } = props;
+export const Card = () => {
 
   return (
     <div style={style}>
       <p>Haryu</p>
-      <EditButton isAdmin={isAdmin} />
+      <EditButton />
     </div>
   )
 }
